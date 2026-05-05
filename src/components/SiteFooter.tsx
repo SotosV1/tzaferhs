@@ -23,7 +23,7 @@ export function SiteFooter() {
           <Link to="/products" className="block text-muted-foreground hover:text-primary">Προϊόντα</Link>
           <Link to="/about" className="block text-muted-foreground hover:text-primary">Το κατάστημα</Link>
           <Link to="/contact" className="block text-muted-foreground hover:text-primary">Επικοινωνία</Link>
-          <Link to="/cart" className="block text-muted-foreground hover:text-primary">Καλάθι</Link>
+          <Link to="/" className="block text-muted-foreground hover:text-primary">Αρχική</Link>
         </div>
       </div>
       <div className="border-t border-border py-4 text-center text-xs text-muted-foreground">
