@@ -7,7 +7,7 @@ export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
       { title: "Προϊόντα — ΤΖΑΦΕΡΗΣ Φρούτα & Λαχανικά" },
-      { name: "description", content: "Φρέσκα φρούτα, λαχανικά και μυρωδικά εποχής. Παραγγείλτε online." },
+      { name: "description", content: "Φρέσκα φρούτα, λαχανικά και μυρωδικά εποχής στην Έδεσσα." },
     ],
   }),
   component: ProductsPage,

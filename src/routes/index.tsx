@@ -2,13 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
 import { products } from "@/lib/products";
 import { ProductCard } from "@/components/ProductCard";
-import { Truck, Leaf, MapPin, Sparkles } from "lucide-react";
+import { Leaf, MapPin, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "ΤΖΑΦΕΡΗΣ — Φρούτα & Λαχανικά | Έδεσσα" },
-      { name: "description", content: "Φρέσκα φρούτα και λαχανικά κάθε μέρα. Online παραγγελίες με delivery στην Έδεσσα." },
+      { name: "description", content: "Φρέσκα φρούτα και λαχανικά κάθε μέρα στην Έδεσσα. Ρήγα Φεραίου 2." },
     ],
   }),
   component: Index,
@@ -38,7 +38,7 @@ function Index() {
             Από τη γη <span className="text-accent">στο τραπέζι</span> σας.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-background/90">
-            Φρέσκα φρούτα και λαχανικά, διαλεγμένα ένα-ένα κάθε πρωί. Παραγγείλτε online και θα τα φέρουμε στην πόρτα σας.
+            Φρέσκα φρούτα και λαχανικά, διαλεγμένα ένα-ένα κάθε πρωί. Σας περιμένουμε στο μαγαζί μας στην καρδιά της Έδεσσας.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -62,7 +62,7 @@ function Index() {
         <div className="grid gap-6 sm:grid-cols-3">
           {[
             { icon: Leaf, title: "Φρέσκα κάθε μέρα", text: "Καθημερινή προμήθεια από επιλεγμένους παραγωγούς της περιοχής." },
-            { icon: Truck, title: "Delivery στην Έδεσσα", text: "Παράδοση στο σπίτι σας με μία απλή online παραγγελία." },
+            { icon: MapPin, title: "Στην καρδιά της Έδεσσας", text: "Ρήγα Φεραίου 2 — μας βρίσκετε εύκολα κάθε μέρα." },
             { icon: Sparkles, title: "Επιλογή με μεράκι", text: "Διαλέγουμε ένα-ένα τα προϊόντα που φτάνουν στο τραπέζι σας." },
           ].map((f, i) => (
             <div key={i} className="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)]">
@@ -95,19 +95,19 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-6xl px-4">
+      <section className="mx-auto max-w-6xl px-4 pb-16">
         <div className="overflow-hidden rounded-3xl bg-[var(--gradient-warm)] p-10 text-primary-foreground shadow-[var(--shadow-warm)] md:p-16">
           <h2 className="max-w-2xl font-display text-4xl font-bold leading-tight md:text-5xl">
-            Ετοιμάστε το καλάθι σας — εμείς το φέρνουμε.
+            Σας περιμένουμε στο μαγαζί μας.
           </h2>
           <p className="mt-4 max-w-xl text-primary-foreground/90">
-            Διαλέξτε από φρούτα, λαχανικά και μυρωδικά εποχής. Παράδοση αυθημερόν στην Έδεσσα.
+            Φρούτα, λαχανικά και μυρωδικά εποχής, διαλεγμένα με μεράκι. Ρήγα Φεραίου 2, Έδεσσα.
           </p>
           <Link
-            to="/products"
+            to="/contact"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-background px-7 py-3.5 font-semibold text-foreground transition-transform hover:scale-105"
           >
-            Παραγγελία τώρα
+            Βρείτε μας
           </Link>
         </div>
       </section>

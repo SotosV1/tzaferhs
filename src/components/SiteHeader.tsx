@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { ShoppingBasket, Menu } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
-import { useCart } from "@/lib/cart";
 
 const links = [
   { to: "/", label: "Αρχική" },
@@ -11,7 +10,6 @@ const links = [
 ] as const;
 
 export function SiteHeader() {
-  const { count } = useCart();
   const [open, setOpen] = useState(false);
 
   return (
@@ -42,18 +40,13 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link
-            to="/cart"
-            className="relative flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-warm)] transition-transform hover:scale-105"
+          <a
+            href="tel:2381024884"
+            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-warm)] transition-transform hover:scale-105"
           >
-            <ShoppingBasket className="h-4 w-4" />
-            <span className="hidden sm:inline">Καλάθι</span>
-            {count > 0 && (
-              <span className="ml-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1.5 text-xs font-bold text-accent-foreground">
-                {count}
-              </span>
-            )}
-          </Link>
+            <Phone className="h-4 w-4" />
+            2381 024884
+          </a>
           <button
             className="md:hidden rounded-full p-2 hover:bg-muted"
             onClick={() => setOpen((v) => !v)}
