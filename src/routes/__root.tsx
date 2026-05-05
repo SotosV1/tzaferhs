@@ -1,5 +1,4 @@
 import { Outlet, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-import { CartProvider } from "@/lib/cart";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Link } from "@tanstack/react-router";
@@ -34,14 +33,14 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "ΤΖΑΦΕΡΗΣ — Φρούτα & Λαχανικά" },
-      { name: "description", content: "Φρέσκα φρούτα και λαχανικά καθημερινά στην Έδεσσα. Παραγγείλτε online για παράδοση στο σπίτι σας." },
+      { name: "description", content: "Φρέσκα φρούτα και λαχανικά καθημερινά στην Έδεσσα. Επισκεφθείτε μας στη Ρήγα Φεραίου 2." },
       { name: "author", content: "ΤΖΑΦΕΡΗΣ" },
       { property: "og:title", content: "ΤΖΑΦΕΡΗΣ — Φρούτα & Λαχανικά" },
-      { property: "og:description", content: "Φρέσκα φρούτα και λαχανικά καθημερινά στην Έδεσσα. Παραγγείλτε online για παράδοση στο σπίτι σας." },
+      { property: "og:description", content: "Φρέσκα φρούτα και λαχανικά καθημερινά στην Έδεσσα." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "ΤΖΑΦΕΡΗΣ — Φρούτα & Λαχανικά" },
-      { name: "twitter:description", content: "Φρέσκα φρούτα και λαχανικά καθημερινά στην Έδεσσα. Παραγγείλτε online για παράδοση στο σπίτι σας." },
+      { name: "twitter:description", content: "Φρέσκα φρούτα και λαχανικά καθημερινά στην Έδεσσα." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/852d248c-eb72-4dfd-bc8d-577ebe4bc1f8/id-preview-a41fc73e--5e9780dc-591c-4134-b0cb-8b9ea931e51f.lovable.app-1777875827314.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/852d248c-eb72-4dfd-bc8d-577ebe4bc1f8/id-preview-a41fc73e--5e9780dc-591c-4134-b0cb-8b9ea931e51f.lovable.app-1777875827314.png" },
     ],
@@ -68,14 +67,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   return (
-    <CartProvider>
-      <div className="flex min-h-screen flex-col">
-        <SiteHeader />
-        <main className="flex-1">
-          <Outlet />
-        </main>
-        <SiteFooter />
-      </div>
-    </CartProvider>
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <SiteFooter />
+    </div>
   );
 }
