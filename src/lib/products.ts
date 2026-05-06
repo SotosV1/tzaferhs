@@ -5,6 +5,7 @@ export type Product = {
   price: number; // €/kg or €/τεμ
   unit: "κιλό" | "τεμάχιο" | "ματσάκι";
   emoji: string;
+  icon?: "plum" | "fig" | "pomegranate";
   description: string;
 };
 
@@ -29,9 +30,9 @@ export const products: Product[] = [
   { id: "peach", name: "Ροδάκινα", category: "Φρούτα", price: 1.8, unit: "κιλό", emoji: "🍑", description: "Ζουμερά ροδάκινα Πέλλας." },
   { id: "pear", name: "Αχλάδια", category: "Φρούτα", price: 1.7, unit: "κιλό", emoji: "🍐", description: "Μυρωδάτα αχλάδια κρυστάλλια." },
   { id: "apricot", name: "Βερίκοκα", category: "Φρούτα", price: 2.4, unit: "κιλό", emoji: "🍑", description: "Γλυκά βερίκοκα." },
-  { id: "plum", name: "Δαμάσκηνα", category: "Φρούτα", price: 2.2, unit: "κιλό", emoji: "🟣", description: "Δροσερά δαμάσκηνα." },
-  { id: "fig", name: "Σύκα", category: "Φρούτα", price: 3.0, unit: "κιλό", emoji: "🟢", description: "Φρέσκα σύκα." },
-  { id: "pomegranate", name: "Ρόδια", category: "Φρούτα", price: 2.5, unit: "κιλό", emoji: "🔴", description: "Ρόδια γεμάτα αντιοξειδωτικά." },
+  { id: "plum", name: "Δαμάσκηνα", category: "Φρούτα", price: 2.2, unit: "κιλό", emoji: "", icon: "plum", description: "Δροσερά δαμάσκηνα." },
+  { id: "fig", name: "Σύκα", category: "Φρούτα", price: 3.0, unit: "κιλό", emoji: "", icon: "fig", description: "Φρέσκα σύκα." },
+  { id: "pomegranate", name: "Ρόδια", category: "Φρούτα", price: 2.5, unit: "κιλό", emoji: "", icon: "pomegranate", description: "Ρόδια γεμάτα αντιοξειδωτικά." },
   { id: "kiwi", name: "Ακτινίδια", category: "Φρούτα", price: 2.6, unit: "κιλό", emoji: "🥝", description: "Ακτινίδια Πιερίας." },
   { id: "pineapple", name: "Ανανάς", category: "Φρούτα", price: 2.8, unit: "τεμάχιο", emoji: "🍍", description: "Τροπικός ανανάς." },
   { id: "mango", name: "Μάνγκο", category: "Φρούτα", price: 3.9, unit: "τεμάχιο", emoji: "🥭", description: "Ώριμο μάνγκο." },

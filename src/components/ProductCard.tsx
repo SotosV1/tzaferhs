@@ -1,10 +1,18 @@
 import type { Product } from "@/lib/products";
+import { FigIcon, PlumIcon, PomegranateIcon } from "./FruitIcons";
+
+const iconMap = { plum: PlumIcon, fig: FigIcon, pomegranate: PomegranateIcon };
 
 export function ProductCard({ product }: { product: Product }) {
+  const SvgIcon = product.icon ? iconMap[product.icon] : null;
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-warm)]">
       <div className="relative flex aspect-square items-center justify-center bg-gradient-to-br from-muted to-accent/20 text-7xl">
-        <span className="transition-transform duration-300 group-hover:scale-110">{product.emoji}</span>
+        {SvgIcon ? (
+          <SvgIcon className="h-24 w-24 transition-transform duration-300 group-hover:scale-110" />
+        ) : (
+          <span className="transition-transform duration-300 group-hover:scale-110">{product.emoji}</span>
+        )}
         <span className="absolute left-3 top-3 rounded-full bg-secondary/90 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-secondary-foreground">
           {product.category}
         </span>
