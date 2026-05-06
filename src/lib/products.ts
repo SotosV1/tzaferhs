@@ -13,6 +13,7 @@ export const products: Product[] = [
   { id: "tomato", name: "Ντομάτες", category: "Λαχανικά", price: 1.8, unit: "κιλό", emoji: "🍅", description: "Φρέσκιες ντομάτες από τοπικούς παραγωγούς." },
   { id: "cucumber", name: "Αγγούρια", category: "Λαχανικά", price: 1.2, unit: "κιλό", emoji: "🥒", description: "Τραγανά, δροσερά αγγούρια." },
   { id: "pepper", name: "Πιπεριές", category: "Λαχανικά", price: 2.5, unit: "κιλό", emoji: "🫑", description: "Κόκκινες & πράσινες πιπεριές." },
+  { id: "red-bell-pepper", name: "Κόκκινη Πιπεριά", category: "Λαχανικά", price: 2.8, unit: "κιλό", emoji: "🌶️", description: "Γλυκιά κόκκινη πιπεριά Φλωρίνης." },
   { id: "potato", name: "Πατάτες", category: "Λαχανικά", price: 0.9, unit: "κιλό", emoji: "🥔", description: "Πατάτες αμυγδαλωτές." },
   { id: "onion", name: "Κρεμμύδια", category: "Λαχανικά", price: 0.8, unit: "κιλό", emoji: "🧅", description: "Ξανθά κρεμμύδια." },
   { id: "carrot", name: "Καρότα", category: "Λαχανικά", price: 1.1, unit: "κιλό", emoji: "🥕", description: "Φρέσκα καρότα." },
@@ -35,11 +36,11 @@ export const products: Product[] = [
   { id: "pomegranate", name: "Ρόδια", category: "Φρούτα", price: 2.5, unit: "κιλό", emoji: "", icon: "pomegranate", description: "Ρόδια γεμάτα αντιοξειδωτικά." },
   { id: "kiwi", name: "Ακτινίδια", category: "Φρούτα", price: 2.6, unit: "κιλό", emoji: "🥝", description: "Ακτινίδια Πιερίας." },
   { id: "pineapple", name: "Ανανάς", category: "Φρούτα", price: 2.8, unit: "τεμάχιο", emoji: "🍍", description: "Τροπικός ανανάς." },
-  { id: "mango", name: "Μάνγκο", category: "Φρούτα", price: 3.9, unit: "τεμάχιο", emoji: "🥭", description: "Ώριμο μάνγκο." },
+  
   { id: "mandarin", name: "Μανταρίνια", category: "Φρούτα", price: 1.4, unit: "κιλό", emoji: "🍊", description: "Αρωματικά μανταρίνια Χίου." },
   { id: "blueberry", name: "Μύρτιλα", category: "Φρούτα", price: 5.5, unit: "κιλό", emoji: "🫐", description: "Φρέσκα μύρτιλα." },
   { id: "avocado", name: "Αβοκάντο", category: "Φρούτα", price: 1.8, unit: "τεμάχιο", emoji: "🥑", description: "Κρητικά αβοκάντο." },
-  { id: "coconut", name: "Καρύδα", category: "Φρούτα", price: 3.5, unit: "τεμάχιο", emoji: "🥥", description: "Φρέσκια καρύδα." },
+  
 
   { id: "parsley", name: "Μαϊντανός", category: "Χόρτα & Μυρωδικά", price: 0.7, unit: "ματσάκι", emoji: "🌿", description: "Φρέσκος μαϊντανός." },
   { id: "spinach", name: "Σπανάκι", category: "Χόρτα & Μυρωδικά", price: 1.8, unit: "κιλό", emoji: "🥬", description: "Τρυφερό σπανάκι." },
