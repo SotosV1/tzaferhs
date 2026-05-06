@@ -13,7 +13,7 @@ export const products: Product[] = [
   { id: "tomato", name: "Ντομάτες", category: "Λαχανικά", price: 1.8, unit: "κιλό", emoji: "🍅", description: "Φρέσκιες ντομάτες από τοπικούς παραγωγούς." },
   { id: "cucumber", name: "Αγγούρια", category: "Λαχανικά", price: 1.2, unit: "κιλό", emoji: "🥒", description: "Τραγανά, δροσερά αγγούρια." },
   { id: "pepper", name: "Πιπεριές", category: "Λαχανικά", price: 2.5, unit: "κιλό", emoji: "🫑", description: "Κόκκινες & πράσινες πιπεριές." },
-  { id: "red-bell-pepper", name: "Κόκκινη Πιπεριά", category: "Λαχανικά", price: 2.8, unit: "κιλό", emoji: "🌶️", description: "Γλυκιά κόκκινη πιπεριά Φλωρίνης." },
+  { id: "red-bell-pepper", name: "Κόκκινη Πιπεριά", category: "Λαχανικά", price: 2.8, unit: "κιλό", emoji: "", icon: "bellPepper", description: "Γλυκιά κόκκινη πιπεριά Φλωρίνης." },
   { id: "potato", name: "Πατάτες", category: "Λαχανικά", price: 0.9, unit: "κιλό", emoji: "🥔", description: "Πατάτες αμυγδαλωτές." },
   { id: "onion", name: "Κρεμμύδια", category: "Λαχανικά", price: 0.8, unit: "κιλό", emoji: "🧅", description: "Ξανθά κρεμμύδια." },
   { id: "carrot", name: "Καρότα", category: "Λαχανικά", price: 1.1, unit: "κιλό", emoji: "🥕", description: "Φρέσκα καρότα." },
