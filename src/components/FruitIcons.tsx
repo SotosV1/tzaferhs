@@ -36,6 +36,25 @@ export function FigIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function BellPepperIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <defs>
+        <radialGradient id="bellG" cx="40%" cy="45%" r="60%">
+          <stop offset="0%" stopColor="#ff6b6b" />
+          <stop offset="60%" stopColor="#d62828" />
+          <stop offset="100%" stopColor="#7a1414" />
+        </radialGradient>
+      </defs>
+      <path d="M16 28c0-6 4-10 8-10 2 0 3 1 4 2 1-1 2-2 4-2s3 1 4 2c1-1 2-2 4-2 4 0 8 4 8 10 0 4 2 6 2 12 0 9-7 16-18 16s-18-7-18-16c0-6 2-8 2-12z" fill="url(#bellG)" />
+      <path d="M30 14c-1-3 0-5 2-5s3 2 2 5c2 0 3 1 3 3 0 2-2 3-5 3s-5-1-5-3c0-2 1-3 3-3z" fill="#3a6b2a" />
+      <path d="M32 6v6" stroke="#2a5520" strokeWidth="2" strokeLinecap="round" />
+      <path d="M24 24c-1 6-1 14 1 22M40 24c1 6 1 14-1 22" stroke="#7a1414" strokeWidth="1.5" fill="none" opacity="0.5" />
+      <ellipse cx="22" cy="32" rx="3" ry="8" fill="#fff" opacity="0.25" />
+    </svg>
+  );
+}
+
 export function PomegranateIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" {...props}>
