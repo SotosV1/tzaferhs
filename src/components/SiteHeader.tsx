@@ -17,7 +17,11 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-[var(--shadow-warm)]">
-            <span className="text-xl">🍅</span>
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 3c-1.5 2-3 3-3 6a3 3 0 0 0 6 0c0-3-1.5-4-3-6z" fill="currentColor" />
+              <path d="M5 13c0-2 2-4 7-4s7 2 7 4c0 4-3 8-7 8s-7-4-7-8z" fill="currentColor" opacity="0.85" />
+              <path d="M12 9c1-1 2-1.5 3.5-1.5" opacity="0.6" />
+            </svg>
           </div>
           <div className="leading-tight">
             <div className="font-display text-lg font-bold text-foreground">ΤΖΑΦΕΡΗΣ</div>
