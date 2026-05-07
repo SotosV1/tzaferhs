@@ -38,7 +38,7 @@ export const products: Product[] = [
   { id: "pineapple", name: "Ανανάς", category: "Φρούτα", price: 2.8, unit: "τεμάχιο", emoji: "🍍", description: "Τροπικός ανανάς." },
   
   { id: "mandarin", name: "Μανταρίνια", category: "Φρούτα", price: 1.4, unit: "κιλό", emoji: "🍊", description: "Αρωματικά μανταρίνια Χίου." },
-  { id: "blueberry", name: "Μύρτιλα", category: "Φρούτα", price: 5.5, unit: "κιλό", emoji: "🫐", description: "Φρέσκα μύρτιλα." },
+  
   { id: "avocado", name: "Αβοκάντο", category: "Φρούτα", price: 1.8, unit: "τεμάχιο", emoji: "🥑", description: "Κρητικά αβοκάντο." },
   
 
