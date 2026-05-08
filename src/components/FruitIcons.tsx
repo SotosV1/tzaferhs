@@ -55,6 +55,46 @@ export function BellPepperIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function GrapesIcon(props: SVGProps<SVGSVGElement>) {
+  const purple = [
+    [32, 24], [26, 30], [38, 30], [22, 36], [32, 36], [42, 36],
+    [26, 42], [38, 42], [32, 48],
+  ];
+  const green = [
+    [40, 22], [34, 28], [46, 28], [30, 34], [40, 34], [50, 34],
+    [34, 40], [46, 40], [40, 46],
+  ];
+  return (
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <defs>
+        <radialGradient id="grapePurple" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="#b48ad6" />
+          <stop offset="60%" stopColor="#6b3e8a" />
+          <stop offset="100%" stopColor="#3d1f55" />
+        </radialGradient>
+        <radialGradient id="grapeGreen" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="#d4f08a" />
+          <stop offset="60%" stopColor="#8fb83a" />
+          <stop offset="100%" stopColor="#4f6b1a" />
+        </radialGradient>
+      </defs>
+      {/* stems */}
+      <path d="M32 22c-1-4 1-7 4-9M40 20c-1-4 1-7 4-9" stroke="#5a3a1f" strokeWidth="1.6" strokeLinecap="round" fill="none" />
+      {/* leaf */}
+      <path d="M36 11c4-3 9-2 11 1-2 4-7 5-11 2z" fill="#5a8a3a" />
+      <path d="M36 11c1 1 3 2 6 2" stroke="#3a5d2a" strokeWidth="1" fill="none" />
+      {/* purple bunch (back) */}
+      {purple.map(([x, y], i) => (
+        <circle key={`p${i}`} cx={x} cy={y} r="5" fill="url(#grapePurple)" stroke="#2d1640" strokeWidth="0.5" />
+      ))}
+      {/* green bunch (front, offset) */}
+      {green.map(([x, y], i) => (
+        <circle key={`g${i}`} cx={x} cy={y} r="5" fill="url(#grapeGreen)" stroke="#3a5520" strokeWidth="0.5" opacity="0.95" />
+      ))}
+    </svg>
+  );
+}
+
 export function PomegranateIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" {...props}>
