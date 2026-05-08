@@ -22,7 +22,7 @@ export const products: Product[] = [
   { id: "apple", name: "Μήλα", category: "Φρούτα", price: 1.6, unit: "κιλό", emoji: "🍎", description: "Μήλα Πηλίου, τραγανά και ζουμερά." },
   { id: "green-apple", name: "Πράσινα Μήλα", category: "Φρούτα", price: 1.7, unit: "κιλό", emoji: "🍏", description: "Δροσερά μήλα Granny Smith." },
   { id: "banana", name: "Μπανάνες", category: "Φρούτα", price: 1.9, unit: "κιλό", emoji: "🍌", description: "Ώριμες μπανάνες." },
-  { id: "grape", name: "Σταφύλια", category: "Φρούτα", price: 2.8, unit: "κιλό", emoji: "🍇", description: "Σταφύλια εποχής." },
+  { id: "grape", name: "Σταφύλια", category: "Φρούτα", price: 2.8, unit: "κιλό", emoji: "", icon: "grapes", description: "Σταφύλια εποχής, μαύρα και πράσινα." },
   { id: "watermelon", name: "Καρπούζι", category: "Φρούτα", price: 0.6, unit: "κιλό", emoji: "🍉", description: "Γλυκό καρπούζι." },
   { id: "melon", name: "Πεπόνι", category: "Φρούτα", price: 1.4, unit: "κιλό", emoji: "🍈", description: "Αρωματικό πεπόνι." },
   { id: "lemon", name: "Λεμόνια", category: "Φρούτα", price: 1.5, unit: "κιλό", emoji: "🍋", description: "Αρωματικά λεμόνια." },
