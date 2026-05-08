@@ -1,7 +1,7 @@
 import type { Product } from "@/lib/products";
-import { BellPepperIcon, FigIcon, PlumIcon, PomegranateIcon } from "./FruitIcons";
+import { BellPepperIcon, FigIcon, GrapesIcon, PlumIcon, PomegranateIcon } from "./FruitIcons";
 
-const iconMap = { plum: PlumIcon, fig: FigIcon, pomegranate: PomegranateIcon, bellPepper: BellPepperIcon };
+const iconMap = { plum: PlumIcon, fig: FigIcon, pomegranate: PomegranateIcon, bellPepper: BellPepperIcon, grapes: GrapesIcon };
 
 export function ProductCard({ product }: { product: Product }) {
   const SvgIcon = product.icon ? iconMap[product.icon] : null;
