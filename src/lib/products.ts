@@ -5,7 +5,7 @@ export type Product = {
   price: number; // €/kg or €/τεμ
   unit: "κιλό" | "τεμάχιο" | "ματσάκι";
   emoji: string;
-  icon?: "plum" | "fig" | "pomegranate" | "bellPepper";
+  icon?: "plum" | "fig" | "pomegranate" | "bellPepper" | "grapes";
   description: string;
 };
 
