@@ -1,7 +1,22 @@
 import type { Product } from "@/lib/products";
-import { BellPepperIcon, FigIcon, GrapesIcon, PlumIcon, PomegranateIcon } from "./FruitIcons";
+import {
+  AppleIcon, ApricotIcon, AvocadoIcon, BananaIcon, BellPepperIcon, CarrotIcon, CherryIcon,
+  CucumberIcon, DillIcon, FigIcon, GrapesIcon, GreenAppleIcon, KiwiIcon, LemonIcon,
+  MandarinIcon, MelonIcon, OnionIcon, OrangeIcon, ParsleyIcon, PeachIcon, PearIcon,
+  PepperIcon, PineappleIcon, PlumIcon, PomegranateIcon, PotatoIcon, SpinachIcon,
+  StrawberryIcon, TomatoIcon, WatermelonIcon,
+} from "./FruitIcons";
 
-const iconMap = { plum: PlumIcon, fig: FigIcon, pomegranate: PomegranateIcon, bellPepper: BellPepperIcon, grapes: GrapesIcon };
+const iconMap = {
+  apple: AppleIcon, apricot: ApricotIcon, avocado: AvocadoIcon, banana: BananaIcon,
+  bellPepper: BellPepperIcon, carrot: CarrotIcon, cherry: CherryIcon, cucumber: CucumberIcon,
+  dill: DillIcon, fig: FigIcon, grapes: GrapesIcon, greenApple: GreenAppleIcon,
+  kiwi: KiwiIcon, lemon: LemonIcon, mandarin: MandarinIcon, melon: MelonIcon,
+  onion: OnionIcon, orange: OrangeIcon, parsley: ParsleyIcon, peach: PeachIcon,
+  pear: PearIcon, pepper: PepperIcon, pineapple: PineappleIcon, plum: PlumIcon,
+  pomegranate: PomegranateIcon, potato: PotatoIcon, spinach: SpinachIcon,
+  strawberry: StrawberryIcon, tomato: TomatoIcon, watermelon: WatermelonIcon,
+};
 
 export function ProductCard({ product }: { product: Product }) {
   const SvgIcon = product.icon ? iconMap[product.icon] : null;
@@ -9,7 +24,7 @@ export function ProductCard({ product }: { product: Product }) {
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-soft)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-warm)]">
       <div className="relative flex aspect-square items-center justify-center bg-gradient-to-br from-muted to-accent/20 text-7xl">
         {SvgIcon ? (
-          <SvgIcon className="h-24 w-24 transition-transform duration-300 group-hover:scale-110" />
+          <SvgIcon className="h-28 w-28 transition-transform duration-300 group-hover:scale-110" />
         ) : (
           <span className="transition-transform duration-300 group-hover:scale-110">{product.emoji}</span>
         )}
